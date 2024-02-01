@@ -29,7 +29,7 @@ package week1; /****************************************************************
 
 import java.util.Objects;
 
-public class Complex {
+public class Complex implements iComplex{
     private final double re;   // the real part
     private final double im;   // the imaginary part
 
@@ -171,3 +171,4 @@ public class Complex {
     }
 
 }
+
