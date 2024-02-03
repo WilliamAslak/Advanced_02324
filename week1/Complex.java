@@ -29,7 +29,7 @@ package week1; /****************************************************************
 
 import java.util.Objects;
 
-public class Complex {
+public class Complex implements IComplex {
     private final double re;   // the real part
     private final double im;   // the imaginary part
 
@@ -37,6 +37,11 @@ public class Complex {
     public Complex(double real, double imag) {
         re = real;
         im = imag;
+    }
+
+    @Override
+    public void Complex(double real, double imag) {
+
     }
 
     // return a string representation of the invoking week1.Complex object
@@ -130,7 +135,7 @@ public class Complex {
 
 
     // a static version of plus
-    public static Complex plus(Complex a, Complex b) {
+    public Complex plus(Complex a, Complex b) {
         double real = a.re + b.re;
         double imag = a.im + b.im;
         Complex sum = new Complex(real, imag);
